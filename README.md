@@ -255,114 +255,134 @@ Na página de Alertas, Alice vê por exemplo:
 │ [Comprar] [Ignorar]                          │
 └──────────────────────────────────────────────┘
 
-┌──────────────────────────────────────────────┐
-│ 🐇 RABBIT_HOLE – WonderCoin (WDC)    02:15    │
-│ -------------------------------------------- │
-│ 🔎 Token novo +300%. Risco alto! SCAM 70/100. │
-│ Tier3 - Alto risco. (Ver detalhes...)        │
-│ [Explorar] [Ignorar]                         │
-└──────────────────────────────────────────────┘
-Ao clicar em "Ver detalhes..." do SOL, um pop-up estilizado aparece com fundo translúcido de cartas:
-SOLANA (SOL) - Detalhes da Oportunidade:
-----------------------------------------
-Tipo: 📈 GROW_ME (Poção de Crescimento)
-Resumo: SOL subiu 8% em 10min.
-Contexto: Notícia positiva confirmada, whales comprando.
-Badges: 💰 Smart Money, 🔒 SCAM Score 5/100, 🏅 Tier1
-Recomendação: Possível entrada. Stop sugerido -3%, alvo +5%.
-...
-E assim por diante.
-Esta interface é tanto funcional quanto narrativa – o usuário sente que está lendo um capítulo de uma história a cada alerta detalhado, mas tem todos os números e fatos necessários para decidir seu trade.
-💰 Monetização e Acesso
-Manter um bot sofisticado como o Wonderland Trading Bot requer um modelo de monetização que seja sustentável e, ao mesmo tempo, alinhado à comunidade de usuários. A seguir, explicamos como funciona o acesso ao bot, as assinaturas e o papel do token $WONDER na economia do projeto, bem como os diferentes tipos de usuários beneficiados.
-🗝️ Assinaturas e Níveis de Acesso
-O Wonderland Trading Bot oferece um esquema de assinatura em camadas, inspirado nos personagens:
-	•	Conta de Teste (Visitante em Wonderland): Novos usuários podem se cadastrar e obter acesso limitado gratuito por um período de teste (por ex., 7 dias) ou com funcionalidades restritas. Nessa fase, eles recebem apenas alguns tipos de alertas (talvez Tier1 básicos, atrasados alguns minutos em relação ao tempo real) para sentir o valor do bot. É como uma “amostra do País das Maravilhas” para visitantes curiosos, sem mostrar todos os segredos.
-	•	Assinatura Padrão (Explorador): A camada paga básica, geralmente cobrada mensalmente em moeda fiduciária (cartão de crédito) ou em criptomoeda mainstream. O assinante padrão tem acesso completo aos recursos principais: todos os alertas em tempo real, painel completo, Gale configurável, etc. Aqui, entretanto, pode haver limites no volume de uso – por exemplo, monitorar até X ativos personalizados, ou Gale até certo nível – adequados à maioria dos traders individuais.
-	•	Assinatura Premium (Morador de Wonderland): Um nível acima, com benefícios extras: alertas ainda mais rápidos (prioridade se houver fila), acesso a análises exclusivas (relatórios mais detalhados do Cheshire Cat, por exemplo, ou indicadores experimentais), suporte prioritário e possivelmente a inclusão no programa beta de novas features. Esses assinantes pagam uma taxa maior mensal ou anual.
-	•	VIP / Institucional (Realeza): Um nível especial para fundos, “whales” ou usuários profissionais que queiram integrações sob medida (ex: API direta para receber os sinais no próprio sistema deles), personalização de parâmetros avançados, ou consultoria. Esse seria um pacote caro, possivelmente sob contrato individual, e na temática poderia se chamar “Clube do Chapeleiro” ou “Corte da Rainha”. Oferece acesso irrestrito a tudo, inclusive poder influenciar roadmap via sugestões exclusivas.
-O acesso é gerenciado através de credenciais (login/senha ou login web3 via carteira se usando token) associadas a uma assinatura ativa. Quando a assinatura expira, o usuário volta ao modo restrito até renovar.
-🎟️ Token $WONDER – Utilidade e Benefícios
-O projeto introduz o token $WONDER, que funciona como um token utilitário (utility token) dentro do ecossistema Wonderland:
-	•	Acesso por Token: Em vez de (ou além de) pagar assinatura mensal, o usuário pode adquirir e stakear (travar) uma certa quantidade de $WONDER tokens para ganhar acesso premium ao bot. Por exemplo, quem manter X tokens em sua carteira vinculada ganha os mesmos benefícios da assinatura padrão; quem manter 5X ganha benefícios premium, etc., enquanto os tokens ficarem bloqueados. Isso incentiva a comunidade a possuir parte do ecossistema.
-	•	Descontos e Upgrades: Pagamentos de assinatura feitos em $WONDER podem ter desconto comparado a fiat. Além disso, se o usuário convidar outras pessoas (programa de indicação), as recompensas podem vir em tokens $WONDER, que ele então usa para pagar meses futuros ou liberar features extras.
-	•	Governança e Feedback: Em fases futuras, o $WONDER pode dar direito a voto em enquetes sobre novas funcionalidades – por exemplo, os holders votam qual integração deve ser priorizada (um novo personagem, um novo mercado?). Isso dá voz à comunidade e cria senso de pertencimento.
-	•	Escassez e Valorização: O token tem supply limitado e, idealmente, conforme a base de usuários cresce, a demanda por ele aumenta, potencialmente valorizando-o. Pode haver mecanismos de buyback/burn usando parte do revenue das assinaturas para beneficiar holders (ex: queima de tokens, distribuição de uma parcela como recompensa a stakers).
-	•	Mercado Secundário: $WONDER é um token negociável em exchanges/par DEX, então usuários podem entrar e sair facilmente. Mas o incentivo é mantê-lo para usufruir do Wonderland Bot.
-👥 Diferenciação entre Usuários
-O sistema diferencia usuários basicamente pelos níveis de acesso descritos, mas todos interagem no mesmo painel (com diferenças de permissão). Visualmente, um usuário pode notar seu status: por exemplo, seu nome de perfil pode vir com um badge especial se for Premium (um ícone de coroa 👑 por exemplo). Algumas seções do painel são bloqueadas com um cadeado e explicação “Somente para membros do Clube do Chapeleiro” quando um usuário padrão tenta acessar algo premium.
-Além disso, existe a distinção de usuários com token vs. sem token: se login via carteira detecta os tokens $WONDER necessários, ele automaticamente desbloqueia as features correspondentes. Se a quantidade cair (user vende tokens), após um período de tolerância, o acesso retornaria ao nível adequado.
-A monetização também pode ser complementada por:
-	•	Marketplace de Estratégias: Talvez no futuro, usuários possam comprar “módulos” extras (como um pacote de indicadores avançados da Lagarta Azul) por um pagamento único ou tokens.
-	•	Parcerias/Afiliação: O bot poderia recomendar serviços (como corretoras, VPNs, etc.) ganhando comissão, mas sempre deixando claro e mantendo a confiança do usuário.
-Em resumo, o Wonderland Trading Bot busca monetização de forma a alinhar interesses: usuários engajados podem optar por assinatura tradicional ou investir no token do próprio ecossistema, tornando-se parte dele. Com o tema envolvente, até mesmo a página de preços pode ser apresentada de forma divertida, como escolher “Tomar a poção” (plano básico) ou “Vestir a coroa” (plano VIP). O importante é que as opções sejam claras, o valor percebido seja alto (dado pela qualidade dos sinais e sistemas) e a transição de um curioso gratuito para um assinante satisfeito ocorra naturalmente conforme ele experimenta o poder do bot em sua jornada no País das Maravilhas.
-🔒 Segurança e Conformidade
-Segurança é uma prioridade máxima para o Wonderland Trading Bot – afinal, um mundo mágico também tem suas regras e proteções para que não se torne uma terra sem lei. Nesta seção, detalhamos as medidas de segurança implementadas e como o projeto busca estar em conformidade com boas práticas e requisitos legais.
-🔐 Segurança de Dados e Sistemas
-	•	Criptografia de Dados Sensíveis: Qualquer dado sensível fornecido pelos usuários – seja uma chave de API de exchange, tokens de acesso, e-mail ou informações pessoais – é armazenado usando criptografia forte (por exemplo, AES-256) no banco de dados. Assim, mesmo que houvesse um vazamento do banco, esses dados estariam ilegíveis. Senhas são apenas armazenadas com hash seguro (argon2/bcrypt, não reversíveis).
-	•	Comunicação Segura: Toda comunicação entre o cliente (frontend ou bots de chat) e o servidor é protegida por SSL/TLS (HTTPS/WSS). Não há envios de informações em texto puro pela rede. As integrações com APIs externas também usam canais seguros (HTTPS) e quando possível chaves são transmitidas via header seguros ou signed payloads para evitar intercepção.
-	•	Isolamento de Ambiente: O backend do bot roda em servidores seguros, com firewall configurado para apenas portas necessárias. Os componentes críticos (como o módulo de execução de ordens) podem rodar isolados em contêineres ou máquinas separadas, limitando o impacto caso algum componente menos crítico sofra ataque. Por exemplo, o módulo que interage com Telegram (superfície pública) não tem acesso direto às chaves da exchange; ele passa mensagens internamente a outro módulo isolado que faz as trades.
-	•	Autenticação e Acesso: O painel possui autenticação robusta de usuários. Além de senha, pode oferecer 2FA (autenticação de dois fatores) para prevenir acesso indevido. Sessões expiram após período de inatividade. Admins possuem credenciais separadas e mais fortes, com 2FA obrigatório.
-	•	Testes de Segurança e Revisões: O código do Wonderland Bot, especialmente dos módulos financeiros, é revisado periodicamente. Testes unitários cobrem cenários de Gale e limites para evitar erros lógicos catastróficos (como investir 10x mais do que deveria). Também são feitos testes de penetração (ou planos para fazê-lo) para identificar possíveis vulnerabilidades web (XSS, CSRF, injection) e corrigi-las. Se o token $WONDER possui um contrato inteligente, esse contrato deve passar por auditoria de segurança independente e as auditorias são disponibilizadas publicamente.
-	•	Proteção contra Bots e Abuso: Ironicamente, o bot também precisa se proteger de usos indevidos. Rate limiting é aplicado por usuário para evitar, por exemplo, 1 usuário puxar dados excessivamente via API ou disparar ações em loop. Mecanismos anti-DDOS no servidor (limite de requests por IP) também estão presentes.
-📜 Conformidade e Legal
-	•	Política de Privacidade e Termos de Uso: O projeto mantém documentos claros de política de privacidade (explicando que dados são coletados, como são usados, e compromisso de não vendê-los a terceiros) e termos de uso que delimitam responsabilidades (por exemplo, “os sinais não constituem conselho financeiro oficial; o usuário é responsável por suas decisões de investimento” – a typical disclaimer).
-	•	KYC e Regulamentação: Em princípio, o Wonderland Bot fornece informação e automação por conta e risco do usuário, e não custodia fundos, então pode não requerer KYC (conhecimento do cliente) estrito, a não ser que em algum ponto integre custódia ou ofereça um serviço classificado como financeiro em alguma jurisdição. Contudo, caso se expanda para funcionalidades de gerenciamento de ativos coletivo ou outros, está preparado para implementar KYC/AML mediante parceiros ou provedores externos, para cumprir regulamentações.
-	•	Compliance com Exchanges: Se o bot executa ordens em exchanges através de APIs, ele respeita os termos de serviço dessas exchanges. Por exemplo, não engage em práticas proibidas (como wash trading ou abuso de API). Além disso, honra limites de chamadas para não ser banido.
-	•	Token Compliance: O token $WONDER é tratado como utilitário. Esforços são feitos para evitar caracterização como valor mobiliário (security) – por exemplo, não há promessa de lucro garantido só por holdar, e utilidades concretas são oferecidas. Juridicamente, a equipe consultou advogados para estruturar de forma compliance (talvez limitando venda a certas jurisdições ou aderindo a regulamentos de tokens). Transparência sobre o token (whitepaper, distribuição, etc.) é fornecida para manter confiança e obedecer leis de oferta de criptoativos.
-	•	Segurança do Token e Pagamentos: Se assinaturas forem pagas via cripto, os endereços e sistemas de pagamento são configurados com cuidado. Pode-se usar processadores terceiros de pagamento cripto para não expor diretamente chaves do projeto. Pagamentos em fiat passam por gateways seguros que já cumprem PCI DSS (padrão de segurança da indústria de cartões).
-	•	Backups e Planos de Contingência: Embora não seja uma exigência legal per se, faz parte de boa governança ter backups dos sistemas (múltiplas localizações) e um plano de recuperação de desastres. Se os servidores principais caírem, existe um fallback (nem que seja para avisar os usuários da interrupção). Os usuários também são orientados a habilitar autenticação via outros canais para emergências (ex: se painel web offline, o bot Telegram ainda envia alerta de algo crítico, ou vice-versa).
-🛡️ Ética e Segurança do Usuário
-	•	Modo Simulação: Para cumprir com responsabilidade, o bot pode oferecer um "modo paper trading" ou simulação para novos usuários testarem estratégias sem arriscar dinheiro real. Isso é importante do ponto de vista ético e educacional.
-	•	Conteúdo Apropriado: Mantendo compliance geral, o Wonderland Bot evita conteúdos proibidos. O tema é Wonderland, então a comunicação é saudável e divertida; políticas impedem usos indevidos (por exemplo, não usar o bot para manipular preços ou espalhar FUD falso).
-	•	Atualizações de Segurança: Quando vulnerabilidades são descobertas (como em qualquer software), patches são aplicados rapidamente. Os usuários serão notificados se necessário para alguma ação (ex: recomende mudar senhas se houver qualquer suspeita de comprometimento).
-Em síntese, o Wonderland Trading Bot procura ser tão seguro e confiável quanto um cofre, ainda que apresentado em forma de um coelho fofo ou um gato sorridente. A magia aqui está respaldada por muito trabalho sério de segurança e aderência a normas, garantindo que o usuário possa se aventurar minimizando preocupações com o lado técnico/operacional, focando apenas em aproveitar as oportunidades (e a narrativa divertida).
-🗺️ Roadmap
-O desenvolvimento do Wonderland Trading Bot é planejado em fases, cada qual trazendo novos personagens para a história, funcionalidades aprimoradas e expansão para novos horizontes. Abaixo, traçamos um roadmap (roteiro) das etapas de desenvolvimento e futuras melhorias previstas:
-	•	Fase 1 – Coelho Branco (MVP Inicial): “Seguindo o Coelho Branco” – Nesta primeira etapa, o foco é construir o núcleo funcional: monitoramento básico de mercado (White Rabbit) e geração de alertas simples (GROW_ME, SHRINK_ME) já integrados ao Telegram, com interface web rudimentar mostrando a lista de alertas. A arquitetura backend, banco de dados e integração com uma exchange ou duas são estabelecidas. O Gale ainda não estará ativo nesta fase, mas pode haver simulação no backend. Objetivo: lançar um MVP para alguns usuários testarem a efetividade dos sinais brutos.
-	•	Fase 2 – Gato de Cheshire (Analises Avançadas): “O Sorriso que Analisa” – Introdução do módulo Cheshire Cat. Nesta fase, implementamos o cálculo de SCAM Score, integração on-chain (pelo menos para Binance Smart Chain / Ethereum) e badges como Smart Money. A interface começa a melhorar, exibindo badges e contextualização nos alertas. Também entra aqui a categorização por Tier de risco e a Rainha de Copas filtrando alertas. Basicamente, passamos de alertas burdos para alertas qualificados com inteligência de mercado. Pequeno painel de controle para o usuário surge, permitindo escolher receber ou não os Tier3. Ao final desta fase, o bot já conta com um diferencial forte de qualidade dos sinais.
-	•	Fase 3 – Chapeleiro Maluco (Martingale & UI): “Hora do Chá e do Gale” – Aqui o Sistema de Gale é introduzido plenamente. Testes intensivos são feitos para assegurar sua segurança. A interface do usuário (Painel Wonderland) é lançada em sua versão 1.0 completa, incorporando visual temático e todas as configurações (incluso controle de Gale, integrações de API keys e personalização de alertas). Também é quando lançamos possivelmente o token $WONDER e ajustamos o sistema de assinaturas para integrá-lo. Esta fase é crítica, pois juntamos todos os elementos: sinais inteligentes + automação de estratégia + UI amigável + modelo de negócio. Ao concluir, o produto está pronto para um público mais amplo.
-	•	Fase 4 – Rainha de Copas (Escala e Confiabilidade): “Regendo com Rigor” – Nesta fase, priorizamos escala, estabilidade e conformidade. Isso inclui: hardening de segurança (auditorias formais de código, talvez certificação se aplicável), otimização de performance para suportar milhares de usuários simultâneos, implementação de redundância de servidores e melhora nos sistemas de auto-monitoramento. Adicionamos também mais mercados: por exemplo, suporte a ações ou Forex em modo sinais (se aplicável) ou mais redes blockchain para on-chain analytics. A Rainha de Copas aqui simboliza colocar ordem na casa para crescer com segurança. Internacionalização do conteúdo (tradução para inglês e outros idiomas) também ocorre agora, preparando para usuários globais (mantendo opção de lingua portuguesa com tema original).
-	•	Fase 5 – Lagarta Azul (Inteligência de IA): “Oráculo da Lagarta” – Começa a introdução de módulos de IA/Machine Learning para previsão e análise mais sofisticada. Podemos treinar modelos em cima do histórico de alertas e resultados para refinar a filtragem de falsos positivos (o Cheshire Cat ganhando “poderes psíquicos”). Talvez implementar processamento de linguagem natural para interpretar automaticamente notícias/tweets e pontuar sentimento de forma mais robusta (a Lagarta consultando oráculos). Nesta fase também podemos lançar um aplicativo móvel dedicado, para expandir presença. Novos personagens podem surgir, ex: Tweedledee e Tweedledum para cross-check de sinais usando dois algoritmos diferentes e ver se concordam.
-	•	Fase 6 – Expansão do Reino (Futuro): “Através do Espelho” – Uma fase contínua de expansão em múltiplas frentes: parcerias com outras plataformas (talvez integrar o Wonderland Bot dentro de exchanges ou plataformas DeFi como um plugin), criação de uma comunidade vibrante (lançamento de fóruns, espaços para usuários compartilharem resultados, talvez NFTs colecionáveis de achievements dentro do bot), e aprimoramentos baseados em feedback. Poderia incluir novas classes de alertas (por ex: arbitragem entre mercados – intitulado algo como “Chapeleiro Arbitrário” 😅), ou monitoramento de NFTs/metaverso tokens (a “Toca do Coelho” ganhando novas profundezas). Nessa etapa, o produto se adapta às tendências do mercado e continua inovando para permanecer único.
-Cada fase do roadmap será comunicada aos usuários, muitas vezes de forma temática/divertida, para mantê-los engajados. Por exemplo, ao iniciar a Fase 3, enviar um e-mail/newsletter intitulado “Convite para o Chá do Chapeleiro: Martingale chegou ao Wonderland Bot – veja o que há de novo”.
-O roadmap, claro, pode evoluir conforme mudanças externas (regulamentações, novas oportunidades tecnológicas), mas ele fornece um norte claro de onde o projeto está indo. A visão é de um produto completo, inovador e em constante evolução, que começou simples seguindo um coelho branco e acabou construindo todo um País das Maravilhas de ferramentas para traders.
-📖 Glossário Temático
-Este glossário relaciona os termos técnicos e temáticos usados na documentação do Wonderland Trading Bot, explicando de forma lúdica e objetiva o significado de cada um:
-	•	Alice: Representa o usuário do Wonderland Trading Bot. Assim como Alice explorando o País das Maravilhas, o usuário se aventura pelos mercados com a ajuda do bot. Ex: “Alice recebeu um alerta” significa simplesmente que o usuário recebeu a notificação no painel/app.
-	•	White Rabbit (Coelho Branco): Módulo de detecção inicial de sinais do bot. Está sempre “atrasado” não por lentidão, mas por estar correndo de um ponto a outro procurando novidades. Identifica mudanças bruscas de preço, volume ou eventos marcantes para acionar análises.
-	•	Cheshire Cat (Gato de Cheshire): Módulo de análise e verificação inteligente. Simboliza a sabedoria e astúcia – aparece com informações contextuais, calcula SCAM Score, identifica Smart Money, e filtra falsos alarmes. O “sorriso do Cheshire” no contexto do bot indica quando um sinal parece genuinamente promissor.
-	•	Queen of Hearts (Rainha de Copas): Módulo de gestão de risco e regras. É quem dá a palavra final se um alerta será enviado ou bloqueado, baseado em critérios de segurança. “Cortar as cabeças” significa barrar um sinal perigoso ou interromper sequências de trades arriscadas.
-	•	Mad Hatter (Chapeleiro Maluco): Representa o Sistema de Gale (Martingale) do bot. Assim como o Chapeleiro adora um chá repetitivo e imprevisível, este módulo gerencia as apostas sequenciais (Gale1, Gale2, etc.) tentando reverter perdas – mas precisa de controle para não ficar maluco demais.
-	•	Gale: Abreviação de Martingale, estratégia de apostas/trading onde se dobra o valor a cada perda para tentar garantir ganho líquido ao vencer eventualmente. No Wonderland Bot, Gale é implementado como tentativas automáticas extras após um sinal falhar, com limites de segurança.
-	•	GROW_ME (Alerta “Cresça-me”): Tipo de alerta temático indicando um aumento rápido de preço/valor de um ativo. Inspirado no bolo “Eat Me” que faz Alice crescer. Sinaliza oportunidade de alta (pump).
-	•	SHRINK_ME (Alerta “Encolha-me”): Tipo de alerta indicando uma queda brusca no preço de um ativo. Inspirado na poção “Drink Me” que faz Alice encolher. Sinaliza um dump ou correção forte.
-	•	RABBIT_HOLE (Toca do Coelho): Alerta temático de descoberta ou evento complexo que convida o usuário a “seguir o coelho” e investigar. Geralmente referente a novos ativos ou sequências de acontecimentos incomuns, com risco elevado e potencial incerto.
-	•	MAD_TEA_PARTY (Chá do Chapeleiro): Alerta representando uma confluência de sinais. Vários fatores positivos ocorrendo simultaneamente para um ativo, aumentando a confiabilidade da oportunidade – como vários personagens reunidos numa festa indicando algo grande.
-	•	QUEEN_ALERT (Alerta da Rainha): Mensagem de aviso de segurança emitida quando uma situação de risco extremo é detectada ou uma ação é bloqueada. Pode citar a frase “Cortem as cabeças!” indicando que algo foi removido/impedido por segurança.
-	•	Tier (Tier de Risco): Categoria de risco atribuída a um sinal ou ativo. Vai tipicamente de 1 a 3 (ou 1 a 5 em eventual extensão), onde Tier1 é baixo risco e Tier3 é alto risco. Define o “nível de loucura” da oportunidade e é usado para filtro e exibição ao usuário.
-	•	Smart Money: Termo do mercado para indicar investidores de grande porte ou historicamente bem-sucedidos. No contexto do bot, aparece como um badge 💰 indicando que tais investidores estão envolvidos em uma oportunidade (o que costuma ser um sinal positivo).
-	•	SCAM Score: Métrica que indica o potencial de golpe/fraude de um projeto, baseado em várias características (código, liquidez, distribuição etc.). Quanto maior a pontuação, mais suspeito. Ajuda a identificar tokens perigosos antes que seja tarde.
-	•	Whale (Baleia): No jargão financeiro, é um investidor que movimenta grandes quantidades de dinheiro/fundos. Um Whale Alert no bot significa que um “grande jogador” fez uma transação significativa – podendo influenciar fortemente o preço.
-	•	Badge (Selo): Ícone exibido junto dos alertas para dar informação extra rápida (ex: selo de Smart Money, selo de Whale, selo de volatilidade). Projetado para chamar atenção a aspectos importantes de forma visual.
-	•	Painel Wonderland: Interface web do bot onde o usuário interage. Apresenta os alertas, configurações, estatísticas etc., tudo ambientado na temática do País das Maravilhas.
-	•	$WONDER: Token utilitário do Wonderland Trading Bot. Usado para acesso premium, governança e outras vantagens dentro do ecossistema. Representa um pedaço da magia do projeto que os usuários podem possuir.
-	•	Martingale: (Ver Gale) Estratégia de apostas de aumentar aposta após perda. Nome formal do Gale, de origem nos cassinos/jogos, adaptado para trading de alto risco.
-	•	Stop Loss: Ordem predefinida para vender um ativo caso ele caia a um determinado preço, limitando a perda. O bot pode sugerir stop-loss nos alertas (ex: “Stop sugerido em $X”) ou executar automaticamente se configurado.
-	•	Take Profit: Ordem para vender e realizar lucro quando o preço atinge um certo alvo para garantir o ganho. O bot também sugere ou executa conforme configuração do usuário.
-	•	API: Interface de programação usada para conectar com serviços externos (exchanges, dados de blockchain, etc.). O Wonderland Bot usa várias APIs para obter dados e executar trades.
-	•	Mempool: Área onde ficam transações pendentes na blockchain antes de serem confirmadas. Monitorar o mempool pode dar vantagem identificando movimentos antes de se concretizarem no bloco.
-	•	Backtest: Simulação de como uma estratégia teria se saído com dados passados. Embora não detalhado no texto principal, o termo pode surgir em contexto de avaliar o desempenho dos sinais do bot historicamente.
-	•	Lagarta Azul (Caterpillar): Personagem não implementado no MVP mas idealizado como um possível módulo de IA para previsões e conselhos enigmáticos. Simbolizaria insights ainda mais profundos, quem sabe futuros.
-Este glossário serve como referência rápida. Se ao ler a documentação ou usar o sistema surgir alguma dúvida sobre um termo, a definição está aqui para esclarecer tanto o aspecto divertido quanto o técnico por trás de cada nome.
-💡 Sugestões e Melhorias
-Por mais completo que o Wonderland Trading Bot já seja em conceito, sempre há espaço para deixar a experiência ainda mais mágica e eficaz. Aqui listamos algumas ideias e melhorias futuras que poderiam ser incorporadas para expandir as fronteiras do País das Maravilhas do trading:
-	•	🐛 Oráculo da Lagarta (IA Avançada): Implementar um módulo de inteligência artificial apelidado de Caterpillar Oracle. Essa “Lagarta Azul” faria uso de redes neurais ou modelos de machine learning treinados com o histórico de sinais e dados de mercado para prever tendências ou probabilidades de sucesso de cada alerta. Ela poderia inclusive conversar com o usuário em linguagem natural, esclarecendo dúvidas sobre porque um alerta foi emitido (ex: “Por que este ativo subiu?” – a IA responde no estilo oracular da lagarta, porém informativo). Isso adicionaria uma camada de aprendizado contínuo e interação mais inteligente ao sistema.
-	•	🤝 Personagens Gêmeos (Validação Dupla): Introduzir os Tweedledee e Tweedledum, dois módulos gêmeos que rodem estratégias diferentes e comparem resultados. Por exemplo, um usando análise técnica pura e outro usando análise de fluxo de ordens. Quando ambos concordam sobre uma oportunidade, o alerta ganha um selo especial de “Consenso”. Isso poderia reduzir falsos positivos e dar mais confiabilidade, além de ser tematicamente divertido (os gêmeos concordando ou discordando).
-	•	📊 Replay e Backtesting Visual: Criar uma funcionalidade no painel que permita ao usuário rever o passado (quase como olhar através do espelho do tempo). Ele poderia selecionar um alerta antigo e ver uma animação/gráfico mostrando o que ocorreu antes e depois daquele alerta, verificando se a previsão foi acertada, quanto poderia ter ganhado ou perdido. Isso ajuda a construir confiança no sistema e aprender com os casos. Tematicamente, poderia ser o “Espelho de Alice” ou uma sessão de treino guiada pelo Chapeleiro mostrando “vamos revisar aquela situação!”.
-	•	🎮 Gamificação e Conquistas: Tornar o uso do bot em si um jogo educativo. Por exemplo, conceder badges ou conquistas ao usuário: “Caçador de Coelhos” ao reagir rapidamente a 10 alertas, “Sobreviveu à Rainha” ao sair ileso de 5 alertas de Tier3, “Mestre do Gale” se usar Gale com sucesso em sequência, etc. Esses badges podem não só ser cosméticos, mas talvez dar pequenas recompensas (como desconto na assinatura, ou alguns tokens $WONDER). Isso incentiva o engajamento e aprendizado.
-	•	📱 App Móvel Nativo: Embora o painel web seja funcional em mobile, um aplicativo nativo para Android/iOS poderia melhorar desempenho de notificações, permitir armazenamento local de dados para consultas offline (ex.: glossário, ou últimas análises para ler), e integrar com recursos do dispositivo (alertas sonoros customizados, widgets com os últimos sinais na tela inicial, etc.). O app poderia ter até um mascote interativo (um coelho guia) para ajudar iniciantes.
-	•	🌐 Comunidade e Social Trading: Integrar elementos sociais – por exemplo, um feed (separado dos alertas) onde usuários possam compartilhar ideias ou comentar oportunidades, talvez até competições saudáveis de quem melhor aproveitou os sinais (um ranking mensal, se desejado). Poderia haver um “País das Maravilhas Fórum” ou chat global para assinantes trocarem experiências. Isso tudo, claro, moderado e opt-in, para não misturar com os alertas em si.
+## Sumário Encantado
+- [Visão Geral](#visão-geral)
+- [Arquitetura do Sistema](#arquitetura-do-sistema)
+  - [Frontend — Interface Mágica](#frontend--interface-mágica)
+  - [Backend — Motor Lógico](#backend--motor-lógico)
+  - [Memória de Wonderland (Banco de Dados)](#memória-de-wonderland-banco-de-dados)
+  - [Portais para Outros Reinos (Integrações)](#portais-para-outros-reinos-integrações)
+- [Personagens que Guardam o Reino](#personagens-que-guardam-o-reino)
+- [Tipos de Alertas Temáticos](#tipos-de-alertas-temáticos)
+- [Fluxo Operacional Encantado](#fluxo-operacional-encantado)
+- [Gestão de Risco com a Rainha de Copas](#gestão-de-risco-com-a-rainha-de-copas)
+- [Sistema de Gale com o Chapeleiro Maluco](#sistema-de-gale-com-o-chapeleiro-maluco)
+- [Dados, Logs e Observabilidade](#dados-logs-e-observabilidade)
+- [Experiência do Usuário no Painel Wonderland](#experiência-do-usuário-no-painel-wonderland)
+- [Glossário Rápido de Wonderland](#glossário-rápido-de-wonderland)
+- [Sugestões e Melhorias Futuras](#sugestões-e-melhorias-futuras)
+
+## Visão Geral
+O Wonderland Trading Bot é um sistema de alertas e automação de trading que usa narrativa temática para tornar decisões complexas mais intuitivas. Cada componente recebe a identidade de um personagem icônico de Wonderland, convertendo métricas de risco, sinais de mercado e estratégias de Martingale em uma experiência envolvente para "Alice" — a pessoa que utiliza o bot.
+
+O objetivo é oferecer sinais rápidos e contextualizados sobre oportunidades em mercados de criptomoedas, misturando análise técnica, dados on-chain e verificações de segurança. Ao mesmo tempo, a documentação abraça a fantasia para facilitar o entendimento de fluxos e responsabilidades.
+
+## Arquitetura do Sistema
+A arquitetura é organizada em camadas claras, como os diferentes cenários visitados por Alice.
+
+### Frontend — Interface Mágica
+- Aplicação web responsiva que prioriza clareza das informações financeiras, mesmo com elementos lúdicos.
+- Painel tematizado com ícones, cores e badges que remetem ao universo de Wonderland.
+- Configurações acessíveis: níveis de risco, ativação do Gale, filtros de alertas e vínculos com canais externos (Telegram, e-mail, etc.).
+- Atualizações em tempo real via WebSockets para que os alertas cheguem assim que os personagens os liberam.
+
+### Backend — Motor Lógico
+- Aplicação de alta disponibilidade que coordena múltiplos módulos analíticos em paralelo.
+- Responsabilidades principais:
+  - **Monitoramento contínuo** com o Coelho Branco, processando APIs e WebSockets em alta frequência.
+  - **Análises aprofundadas** com o Gato de Cheshire, que aplica algoritmos técnicos, consulta dados on-chain e calcula SCAM Score.
+  - **Decisão e execução** de alertas e estratégias de Gale.
+  - **Orquestração** do fluxo completo de dados até o envio final ao usuário.
+
+### Memória de Wonderland (Banco de Dados)
+- Armazena históricos de mercado, eventos on-chain, configurações de usuários e assinaturas.
+- Mantém logs e auditoria de cada ação tomada, garantindo transparência e melhoria contínua.
+- Dados sensíveis criptografados, com backups recorrentes para evitar que memórias do reino se percam.
+
+### Portais para Outros Reinos (Integrações)
+- **APIs de exchanges** para preços, volumes, execução de ordens e descoberta de novos ativos.
+- **Serviços blockchain** (nós ou exploradores) para monitorar baleias, smart money e contratos suspeitos.
+- **Plataformas de notificação** (Telegram, Discord, e-mail, SMS) para distribuir alertas onde Alice estiver.
+- **Ferramentas auxiliares** como análise de sentimento, bibliotecas de indicadores técnicos e provedores de pagamento.
+
+## Personagens que Guardam o Reino
+Cada módulo assume uma persona para facilitar a compreensão das responsabilidades:
+
+| Personagem | Função Técnica |
+| --- | --- |
+| 🐇 **White Rabbit** | Sentinela que monitora dados em tempo real e detecta eventos que merecem investigação. |
+| 😸 **Cheshire Cat** | Analista que contextualiza sinais, calcula SCAM Score, identifica Smart Money e filtra falsos positivos. |
+| 👑 **Queen of Hearts** | Guardiã das regras de segurança e risco. Aprova ou bloqueia alertas perigosos. |
+| 🎩 **Mad Hatter** | Executor da estratégia Gale (Martingale), gerenciando tentativas extras após perdas. |
+| 🐛 **Lagarta Azul (conceito futuro)** | IA avançada planejada para previsões e diálogo com usuários. |
+
+## Tipos de Alertas Temáticos
+- **GROW_ME ("Cresça-me")**: Indica pumps ou movimentos de alta relevantes.
+- **SHRINK_ME ("Encolha-me")**: Aponta quedas abruptas ou dumps.
+- **RABBIT_HOLE (Toca do Coelho)**: Descobertas complexas, como novos tokens ou sequências incomuns.
+- **MAD_TEA_PARTY (Chá do Chapeleiro)**: Confluência positiva de múltiplos sinais.
+- **QUEEN_ALERT (Alerta da Rainha)**: Mensagens de segurança avisando sobre bloqueios ou riscos extremos.
+- **Whale & Smart Money Badges**: Selos adicionais para transações de grande porte ou carteiras reconhecidas.
+
+## Fluxo Operacional Encantado
+1. **White Rabbit** detecta um evento fora do comum (preço, volume, transação on-chain, listagem, etc.).
+2. **Cheshire Cat** coleta contexto extra, consulta notícias, verifica liquidez e calcula indicadores de risco.
+3. **Queen of Hearts** aplica as regras de segurança; se o sinal não atende aos critérios, ele é vetado.
+4. **Mad Hatter** prepara a sequência de Gale caso o usuário tenha habilitado a estratégia.
+5. **Frontend** recebe o alerta formatado com badges, recomendações de stop loss/take profit e envia notificações aos canais conectados.
+
+## Gestão de Risco com a Rainha de Copas
+- Define tiers de risco (1 = seguro, 3 = arrojado) para cada alerta.
+- Aplica limites globais e específicos por usuário para evitar exposição excessiva.
+- Sugere stops, take profit e políticas como trailing stop ou saídas parciais.
+- Mantém auditoria completa para explicar decisões e garantir confiança.
+
+## Sistema de Gale com o Chapeleiro Maluco
+- Implementa Martingale de forma controlada, com limites de tentativas e exposição máxima.
+- Ajusta o tamanho das posições a cada tentativa, tentando recuperar perdas sem comprometer o capital.
+- Trabalha em conjunto com a Rainha de Copas para interromper sequências perigosas.
+
+## Dados, Logs e Observabilidade
+- Histórico de preços, volumes, liquidez, eventos on-chain e configurações ficam centralizados.
+- Logs detalhados documentam cada alerta emitido, bloqueado ou executado automaticamente.
+- Métricas alimentam backtests, relatórios e possíveis módulos de IA (Lagarta Azul).
+
+## Experiência do Usuário no Painel Wonderland
+- Painel web com visual temático, porém organizado para leitura rápida de dados.
+- Badges e ícones destacam informações críticas (Smart Money, Whale, risco, status do Gale).
+- Onboarding com glossário e narrativas ajuda iniciantes a entenderem termos técnicos.
+- Possibilidade de gamificação, rankings e conquistas para engajar a comunidade.
+
+## Glossário Rápido de Wonderland
+| Termo | Significado |
+| --- | --- |
+| **Alice** | Usuário que recebe alertas e interage com o painel. |
+| **Tier** | Nível de risco do sinal (1 a 3). |
+| **SCAM Score** | Indicador de potencial fraude de um projeto/token. |
+| **Smart Money** | Investidores relevantes acompanhados pelo sistema. |
+| **Whale** | Carteiras que movimentam grandes quantias. |
+| **Stop Loss / Take Profit** | Ordens automáticas para limitar perdas ou garantir lucros. |
+| **Mempool** | Fila de transações pendentes na blockchain. |
+| **Backtest** | Simulação histórica para validar estratégias. |
+| **$WONDER** | Token utilitário do ecossistema Wonderland. |
+
+## Sugestões e Melhorias Futuras
+- 🐛 **Oráculo da Lagarta**: IA que responde dúvidas dos usuários com insights preditivos.
+- 🤝 **Gêmeos Tweedledee & Tweedledum**: Estratégias paralelas que confirmam sinais quando há consenso.
+- 📊 **Replay e Backtesting Visual**: Revisão animada do que aconteceu após cada alerta.
+- 🎮 **Gamificação**: Badges, desafios e recompensas em tokens $WONDER para incentivar o aprendizado.
+- 📱 **Aplicativo móvel nativo**: Melhor experiência de notificações e widgets com últimos sinais.
+- 🌐 **Social Trading**: Feed para troca de ideias e competições amistosas entre usuários.
+- 🔗 **Integração DeFi direta**: Acesso rápido a swaps em DEX e protocolos financeiros.
+- 📰 **Notícias e Sentimento**: Consolidação de manchetes relevantes dentro do painel.
+- 📅 **Calendário de Wonderland**: Eventos macro e específicos que podem impactar o mercado.
+- 🔍 **Scanner Personalizado**: Filtros customizáveis para que o usuário crie seus próprios gatilhos.
+- 🔐 **Controles de Risco Avançados**: Trailing stop automatizado, limites diários de Gale e saídas parciais.
+- 🎭 **Temas Alternativos**: Permitir skins opcionais sem perder a essência Wonderland.
+
+---
+
+> "Siga o coelho branco, mas mantenha a Rainha por perto." – Documentação encantada do Wonderland Trading Bot
 	•	🔗 Integração DeFi Direta: Para usuários mais avançados, permitir integração direta com protocolos DeFi: por exemplo, ao detectar oportunidade em uma DEX, o bot poderia, além de alertar, oferecer um botão “executar via MetaMask” ou conectar com WalletConnect para já levar o usuário à tela de swap. Isso poupa tempo em situações de arbitragem ou hype. A segurança aqui seria crucial, mas é uma melhoria poderosa.
 	•	📰 Integração de Notícias/Redes Sociais: Expandir a coleta de informações para fontes de notícias (RSS feeds, Twitter hashtags) de forma mais integrada. Já falamos que o Cheshire olha notícias, mas isso poderia ser formalizado: talvez uma seção de “Notícias de Wonderland” que mostra manchetes relevantes recentes, ou alertas especiais se um influenciador grande citar um ativo (com cuidado pra não virar ruído).
 	•	📅 Calendário do País das Maravilhas: Uma funcionalidade de calendário exibindo eventos programados do mercado (ex: divulgação de resultados de empresas, vencimento de opções, hardforks de criptomoedas) contextualizados. Tipo: “Dia 15: Reunião do FED (Chapeleiro está atento ao relógio)”, ou “Dia 20: Unlock de tokens do projeto X (Rainha de Copas de olho)”. Isso ajuda usuários a se prepararem para volatilidade esperada.
