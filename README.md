@@ -4,6 +4,28 @@ Wonderland Trading Bot: Documentação Técnica Encantada
 ✨ Visão Geral
 O Wonderland Trading Bot é um sistema de alertas e automação de trading envolto em uma temática encantada inspirada em Alice no País das Maravilhas. Seu objetivo é auxiliar traders a navegarem por mercados financeiros (especialmente no universo de criptomoedas) de forma lúdica, porém eficaz, fornecendo sinais, análises de risco e estratégias automatizadas de Martingale através de personagens e itens temáticos. O estilo do bot combina narrativa criativa com rigor técnico: cada módulo interno recebe o nome de um personagem icônico de Wonderland, e cada tipo de alerta é representado por um elemento mágico da história.
 Nesta documentação temática e técnica, exploraremos em detalhes a arquitetura e o funcionamento do Wonderland Trading Bot. Iremos acompanhar a “Alice” (o usuário) por essa jornada mágica: desde a Visão Geral do propósito do bot, passando pela Arquitetura do Sistema, pelos Sistemas de Verificação (como o Coelho Branco e o Gato de Cheshire), pelos diversos Tipos de Alertas temáticos (poções “CRESÇA” e “ENCOLHA”, Toca do Coelho, etc.), até detalhes do Sistema de Gale (Martingale), fluxo de operação, gestão de risco, badges de inteligência de mercado, interface do usuário e muito mais. Tudo será apresentado de forma clara e encantadora, mantendo o tema de Wonderland enquanto esclarece a parte técnica. Prepare-se para seguir o coelho branco e mergulhar nessa enciclopédia fantástica do Wonderland Trading Bot! 🐇✨
+
+🛎️ Implementação Atual de Alertas & APIs
+Para esta iteração materializamos a narrativa mágica em um serviço HTTP totalmente tipado em TypeScript, capaz de orquestrar os alertas do reino e expô-los de forma consistente para o painel Wonderland ou integrações externas.
+
+**Principais endpoints (todos devolvem JSON):**
+* `GET /api/alerts` – lista os alertas ativos do coelho branco, permitindo filtros opcionais por `type`, `status` e `tier` (tiers 1-3). O retorno já traz horários em ISO e badges/risk checks formatados.
+* `POST /api/alerts` – cadastra um novo alerta temático validado pelos guardiões. O payload deve conter tipo, tier, narrativa, trigger, badges e demais metadados descritos na documentação; qualquer inconsistência é recusada com mensagem didática.
+* `GET /api/alerts/:id` – recupera o dossiê completo de um alerta específico, incluindo métricas, ações recomendadas e configurações de Gale.
+* `POST /api/alerts/:id/acknowledge` – marca um alerta como reconhecido pela Alice.
+* `POST /api/alerts/:id/resolve` – finaliza o alerta após a intervenção da Rainha de Copas.
+* `GET /api/modules/status` – expõe o batimento cardíaco dos módulos White Rabbit, Cheshire Cat, Mad Hatter e Queen of Hearts.
+* `GET /api/health` – checagem simples de vitalidade do serviço.
+
+O backend evita dependências externas e usa apenas módulos nativos do Node, enriquecidos com validações próprias (`src/utils/validation.ts`) para garantir que nenhum `any` ou carga inválida se infiltre no reino. Todo alerta é persistido em memória pelo `AlertService`, que fornece clones imutáveis para leitura e mantém seeds inspirados na narrativa (pump autorizado e bloqueio real da Rainha).
+
+🧪 Testes e Qualidade de Código
+* `npm run build` – compila o projeto com `tsc`, utilizando tipagens próprias (pasta `types/`) para contornar a ausência de pacotes externos e garantir checagem estrita.
+* `npm run lint` – executa o mesmo `tsc --noEmit` apenas para verificação estática rápida.
+* `npm test` – compila e roda a suíte de testes com o runner nativo `node:test`. Os testes cobrem tanto a lógica do serviço de alertas quanto o fluxo completo dos endpoints via `fetch`, assegurando que o pipeline lúdico continue sólido.
+
+Para experimentar a API manualmente, execute `npm run start`. O servidor gera os alertas seed e fica escutando (porta padrão 3000), pronto para receber comandos vindos do painel Wonderland.
+
 🏗️ Arquitetura do Sistema
 A arquitetura do Wonderland Trading Bot é dividida em camadas, assim como as diferentes “partes” do País das Maravilhas. Cada camada tem um papel distinto – Frontend (a interface visível, o “portal” para Wonderland), Backend (a lógica e motores escondidos nos bastidores, onde a magia acontece), Banco de Dados (onde as memórias e informações do reino são armazenadas) e Integrações (conexões com outros reinos/sistemas externos). A seguir, detalhamos cada componente:
 🎨 Frontend (Interface Mágica do Usuário)

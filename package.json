@@ -1,0 +1,23 @@
+{
+  "name": "wonderland-trading-bot-api",
+  "version": "0.1.0",
+  "description": "APIs e sistema de alertas temático do Wonderland Trading Bot",
+  "main": "build/src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "npm run build && node --test \"build/tests/**/*.js\"",
+    "start": "npm run build && node build/src/index.js"
+  },
+  "keywords": [
+    "wonderland",
+    "trading",
+    "alerts",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
