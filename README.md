@@ -1,86 +1,134 @@
-# Wonderland Trading Control Center
-Painel Next.js (TypeScript + Tailwind CSS) inspirado em *Alice no País das Maravilhas* para acompanhar o Wonderland Trading Bot. O projeto integra **APIs gratuitas** (CoinGecko e CryptoCompare), oferece **simuladores quantitativos** (Martingale e Monte Carlo), persiste cenários em um **banco de dados SQLite** via Prisma e está preparado para push em provedores gratuitos (Vercel, Railway, etc.).
+# Wonderland Trading Bot 🐇✨
+Uma documentação técnica encantada para explorar cada canto do Wonderland Trading Bot, mantendo o espírito lúdico de Alice no País das Maravilhas sem perder o rigor necessário para operar em mercados financeiros voláteis.
 
-## ✨ Principais Funcionalidades
+## Sumário Encantado
+- [Visão Geral](#visão-geral)
+- [Arquitetura do Sistema](#arquitetura-do-sistema)
+  - [Frontend — Interface Mágica](#frontend--interface-mágica)
+  - [Backend — Motor Lógico](#backend--motor-lógico)
+  - [Memória de Wonderland (Banco de Dados)](#memória-de-wonderland-banco-de-dados)
+  - [Portais para Outros Reinos (Integrações)](#portais-para-outros-reinos-integrações)
+- [Personagens que Guardam o Reino](#personagens-que-guardam-o-reino)
+- [Tipos de Alertas Temáticos](#tipos-de-alertas-temáticos)
+- [Fluxo Operacional Encantado](#fluxo-operacional-encantado)
+- [Gestão de Risco com a Rainha de Copas](#gestão-de-risco-com-a-rainha-de-copas)
+- [Sistema de Gale com o Chapeleiro Maluco](#sistema-de-gale-com-o-chapeleiro-maluco)
+- [Dados, Logs e Observabilidade](#dados-logs-e-observabilidade)
+- [Experiência do Usuário no Painel Wonderland](#experiência-do-usuário-no-painel-wonderland)
+- [Glossário Rápido de Wonderland](#glossário-rápido-de-wonderland)
+- [Sugestões e Melhorias Futuras](#sugestões-e-melhorias-futuras)
 
-- **Dashboard temático** com métricas globais do CoinGecko e cards interativos.
-- **Panorama de mercado** em tempo real (CoinGecko Markets).
-- **Feed de notícias** usando CryptoCompare News API (sem chave).
-- **Simulador Martingale** para a estratégia do “Chapeleiro Maluco”.
-- **Simulação Monte Carlo** para avaliar risco/retorno dos alertas.
-- **Gestor de Cenários**: CRUD simples persistido em SQLite com Prisma.
-- **Pronto para Supabase**: cliente já configurado para notificações/streaming.
-- **Testes unitários** (Vitest) para garantir confiabilidade dos simuladores.
+## Visão Geral
+O Wonderland Trading Bot é um sistema de alertas e automação de trading que usa narrativa temática para tornar decisões complexas mais intuitivas. Cada componente recebe a identidade de um personagem icônico de Wonderland, convertendo métricas de risco, sinais de mercado e estratégias de Martingale em uma experiência envolvente para "Alice" — a pessoa que utiliza o bot.
 
-## 🏗️ Stack Técnica
+O objetivo é oferecer sinais rápidos e contextualizados sobre oportunidades em mercados de criptomoedas, misturando análise técnica, dados on-chain e verificações de segurança. Ao mesmo tempo, a documentação abraça a fantasia para facilitar o entendimento de fluxos e responsabilidades.
 
-- [Next.js 14 (App Router)](https://nextjs.org/docs/app) com TypeScript.
-- [Tailwind CSS 3](https://tailwindcss.com/) e estética glassmorphism dark.
-- [Prisma ORM](https://www.prisma.io/) com SQLite (grátis por padrão).
-- Integrações com APIs públicas (CoinGecko & CryptoCompare) e Supabase SDK.
-- Testes com [Vitest](https://vitest.dev/) + Testing Library.
+## Arquitetura do Sistema
+A arquitetura é organizada em camadas claras, como os diferentes cenários visitados por Alice.
 
-## 🚀 Como rodar localmente
+### Frontend — Interface Mágica
+- Aplicação web responsiva que prioriza clareza das informações financeiras, mesmo com elementos lúdicos.
+- Painel tematizado com ícones, cores e badges que remetem ao universo de Wonderland.
+- Configurações acessíveis: níveis de risco, ativação do Gale, filtros de alertas e vínculos com canais externos (Telegram, e-mail, etc.).
+- Atualizações em tempo real via WebSockets para que os alertas cheguem assim que os personagens os liberam.
 
-> **Observação**: os comandos abaixo exigem acesso ao registry npm. Caso seu ambiente esteja offline, realize o `npm install` em outra máquina ou utilize um cache local.
+### Backend — Motor Lógico
+- Aplicação de alta disponibilidade que coordena múltiplos módulos analíticos em paralelo.
+- Responsabilidades principais:
+  - **Monitoramento contínuo** com o Coelho Branco, processando APIs e WebSockets em alta frequência.
+  - **Análises aprofundadas** com o Gato de Cheshire, que aplica algoritmos técnicos, consulta dados on-chain e calcula SCAM Score.
+  - **Decisão e execução** de alertas e estratégias de Gale.
+  - **Orquestração** do fluxo completo de dados até o envio final ao usuário.
 
-```bash
-# 1. Instale as dependências
-npm install
+### Memória de Wonderland (Banco de Dados)
+- Armazena históricos de mercado, eventos on-chain, configurações de usuários e assinaturas.
+- Mantém logs e auditoria de cada ação tomada, garantindo transparência e melhoria contínua.
+- Dados sensíveis criptografados, com backups recorrentes para evitar que memórias do reino se percam.
 
-# 2. Configure o banco de dados SQLite
-echo "DATABASE_URL=\"file:./prisma/dev.db\"" > .env
-npm run prisma:push
-npm run prisma:seed
+### Portais para Outros Reinos (Integrações)
+- **APIs de exchanges** para preços, volumes, execução de ordens e descoberta de novos ativos.
+- **Serviços blockchain** (nós ou exploradores) para monitorar baleias, smart money e contratos suspeitos.
+- **Plataformas de notificação** (Telegram, Discord, e-mail, SMS) para distribuir alertas onde Alice estiver.
+- **Ferramentas auxiliares** como análise de sentimento, bibliotecas de indicadores técnicos e provedores de pagamento.
 
-# 3. (Opcional) Informe as chaves do Supabase
-echo "NEXT_PUBLIC_SUPABASE_URL=..." >> .env
-echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=..." >> .env
+## Personagens que Guardam o Reino
+Cada módulo assume uma persona para facilitar a compreensão das responsabilidades:
 
-# 4. Suba o ambiente de desenvolvimento
-npm run dev
-```
+| Personagem | Função Técnica |
+| --- | --- |
+| 🐇 **White Rabbit** | Sentinela que monitora dados em tempo real e detecta eventos que merecem investigação. |
+| 😸 **Cheshire Cat** | Analista que contextualiza sinais, calcula SCAM Score, identifica Smart Money e filtra falsos positivos. |
+| 👑 **Queen of Hearts** | Guardiã das regras de segurança e risco. Aprova ou bloqueia alertas perigosos. |
+| 🎩 **Mad Hatter** | Executor da estratégia Gale (Martingale), gerenciando tentativas extras após perdas. |
+| 🐛 **Lagarta Azul (conceito futuro)** | IA avançada planejada para previsões e diálogo com usuários. |
 
-A aplicação estará disponível em `http://localhost:3000`.
+## Tipos de Alertas Temáticos
+- **GROW_ME ("Cresça-me")**: Indica pumps ou movimentos de alta relevantes.
+- **SHRINK_ME ("Encolha-me")**: Aponta quedas abruptas ou dumps.
+- **RABBIT_HOLE (Toca do Coelho)**: Descobertas complexas, como novos tokens ou sequências incomuns.
+- **MAD_TEA_PARTY (Chá do Chapeleiro)**: Confluência positiva de múltiplos sinais.
+- **QUEEN_ALERT (Alerta da Rainha)**: Mensagens de segurança avisando sobre bloqueios ou riscos extremos.
+- **Whale & Smart Money Badges**: Selos adicionais para transações de grande porte ou carteiras reconhecidas.
 
-## 🧪 Testes e Qualidade
+## Fluxo Operacional Encantado
+1. **White Rabbit** detecta um evento fora do comum (preço, volume, transação on-chain, listagem, etc.).
+2. **Cheshire Cat** coleta contexto extra, consulta notícias, verifica liquidez e calcula indicadores de risco.
+3. **Queen of Hearts** aplica as regras de segurança; se o sinal não atende aos critérios, ele é vetado.
+4. **Mad Hatter** prepara a sequência de Gale caso o usuário tenha habilitado a estratégia.
+5. **Frontend** recebe o alerta formatado com badges, recomendações de stop loss/take profit e envia notificações aos canais conectados.
 
-```bash
-# Executar toda a suíte de testes unitários
-npm run test
+## Gestão de Risco com a Rainha de Copas
+- Define tiers de risco (1 = seguro, 3 = arrojado) para cada alerta.
+- Aplica limites globais e específicos por usuário para evitar exposição excessiva.
+- Sugere stops, take profit e políticas como trailing stop ou saídas parciais.
+- Mantém auditoria completa para explicar decisões e garantir confiança.
 
-# Rodar em modo watch para TDD
-npm run test:watch
+## Sistema de Gale com o Chapeleiro Maluco
+- Implementa Martingale de forma controlada, com limites de tentativas e exposição máxima.
+- Ajusta o tamanho das posições a cada tentativa, tentando recuperar perdas sem comprometer o capital.
+- Trabalha em conjunto com a Rainha de Copas para interromper sequências perigosas.
 
-# Analisar padrões com ESLint
-npm run lint
-```
+## Dados, Logs e Observabilidade
+- Histórico de preços, volumes, liquidez, eventos on-chain e configurações ficam centralizados.
+- Logs detalhados documentam cada alerta emitido, bloqueado ou executado automaticamente.
+- Métricas alimentam backtests, relatórios e possíveis módulos de IA (Lagarta Azul).
 
-## 📦 Estrutura de Pastas
+## Experiência do Usuário no Painel Wonderland
+- Painel web com visual temático, porém organizado para leitura rápida de dados.
+- Badges e ícones destacam informações críticas (Smart Money, Whale, risco, status do Gale).
+- Onboarding com glossário e narrativas ajuda iniciantes a entenderem termos técnicos.
+- Possibilidade de gamificação, rankings e conquistas para engajar a comunidade.
 
-```
-app/                # App Router (layout, page e APIs)
-components/         # Componentes React (dashboard, simuladores, etc.)
-lib/                # Utilidades, Prisma Client e simuladores
-prisma/             # Schema, seeds e banco SQLite
-tests/              # Testes unitários com Vitest
-```
+## Glossário Rápido de Wonderland
+| Termo | Significado |
+| --- | --- |
+| **Alice** | Usuário que recebe alertas e interage com o painel. |
+| **Tier** | Nível de risco do sinal (1 a 3). |
+| **SCAM Score** | Indicador de potencial fraude de um projeto/token. |
+| **Smart Money** | Investidores relevantes acompanhados pelo sistema. |
+| **Whale** | Carteiras que movimentam grandes quantias. |
+| **Stop Loss / Take Profit** | Ordens automáticas para limitar perdas ou garantir lucros. |
+| **Mempool** | Fila de transações pendentes na blockchain. |
+| **Backtest** | Simulação histórica para validar estratégias. |
+| **$WONDER** | Token utilitário do ecossistema Wonderland. |
 
-## 🔌 Integrações Gratuitas
+## Sugestões e Melhorias Futuras
+- 🐛 **Oráculo da Lagarta**: IA que responde dúvidas dos usuários com insights preditivos.
+- 🤝 **Gêmeos Tweedledee & Tweedledum**: Estratégias paralelas que confirmam sinais quando há consenso.
+- 📊 **Replay e Backtesting Visual**: Revisão animada do que aconteceu após cada alerta.
+- 🎮 **Gamificação**: Badges, desafios e recompensas em tokens $WONDER para incentivar o aprendizado.
+- 📱 **Aplicativo móvel nativo**: Melhor experiência de notificações e widgets com últimos sinais.
+- 🌐 **Social Trading**: Feed para troca de ideias e competições amistosas entre usuários.
+- 🔗 **Integração DeFi direta**: Acesso rápido a swaps em DEX e protocolos financeiros.
+- 📰 **Notícias e Sentimento**: Consolidação de manchetes relevantes dentro do painel.
+- 📅 **Calendário de Wonderland**: Eventos macro e específicos que podem impactar o mercado.
+- 🔍 **Scanner Personalizado**: Filtros customizáveis para que o usuário crie seus próprios gatilhos.
+- 🔐 **Controles de Risco Avançados**: Trailing stop automatizado, limites diários de Gale e saídas parciais.
+- 🎭 **Temas Alternativos**: Permitir skins opcionais sem perder a essência Wonderland.
 
-- **CoinGecko API** — preços, volume e métricas globais (sem chave).
-- **CryptoCompare News API** — feed de notícias PT/EN (sem chave).
-- **SQLite** — banco de dados local via Prisma, perfeito para POCs.
-- **Supabase** — cliente pronto para habilitar funcionalidades em tempo real.
+---
 
-## 📚 Próximos Passos Sugeridos
-
-- Conectar Supabase Realtime para transmitir novos alertas ao vivo.
-- Criar gráficos históricos usando a CoinGecko /api/v3/coins/{id}/market_chart.
-- Adicionar autenticação (NextAuth + OAuth/Web3) para multiusuários.
-- Publicar na Vercel ou Railway e configurar cron-jobs com Edge Functions.
-
-> "Siga o coelho branco" — explore, ajuste e expanda este painel mágico para seu fluxo de trading! 🐇
+> "Siga o coelho branco, mas mantenha a Rainha por perto." – Documentação encantada do Wonderland Trading Bot
 	•	🔗 Integração DeFi Direta: Para usuários mais avançados, permitir integração direta com protocolos DeFi: por exemplo, ao detectar oportunidade em uma DEX, o bot poderia, além de alertar, oferecer um botão “executar via MetaMask” ou conectar com WalletConnect para já levar o usuário à tela de swap. Isso poupa tempo em situações de arbitragem ou hype. A segurança aqui seria crucial, mas é uma melhoria poderosa.
 	•	📰 Integração de Notícias/Redes Sociais: Expandir a coleta de informações para fontes de notícias (RSS feeds, Twitter hashtags) de forma mais integrada. Já falamos que o Cheshire olha notícias, mas isso poderia ser formalizado: talvez uma seção de “Notícias de Wonderland” que mostra manchetes relevantes recentes, ou alertas especiais se um influenciador grande citar um ativo (com cuidado pra não virar ruído).
 	•	📅 Calendário do País das Maravilhas: Uma funcionalidade de calendário exibindo eventos programados do mercado (ex: divulgação de resultados de empresas, vencimento de opções, hardforks de criptomoedas) contextualizados. Tipo: “Dia 15: Reunião do FED (Chapeleiro está atento ao relógio)”, ou “Dia 20: Unlock de tokens do projeto X (Rainha de Copas de olho)”. Isso ajuda usuários a se prepararem para volatilidade esperada.
